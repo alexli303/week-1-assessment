@@ -1,0 +1,73 @@
+/*
+Project Name: Design Copy
+Client: Instagram
+Author: Alex Li
+Developer @GA in DENVER
+*/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 75%;
+  margin: 50px auto;
+  background-position: center;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  /*background: linear-gradient(to bottom, #517fa4 0%,#517fa4 50%,#000000 50%,white 50%,white 100%);*/
+  background: linear-gradient(to bottom, #517fa4, white,orange);
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+}
+
+
+/******************************************
+/* FOOTER STYLES
+/*******************************************/
+
+ul {
+     padding: 10px;
+     background: rgba(0,0,0,0.5);
+}
+
+li {
+   display: inline;
+   padding: 0px 10px 0px 10px;
+   font-size: 15px;
+   color: white;
+}
+
+a{
+  color: white;
+}
+
+/******************************************
+/* TEXT BOX MAIN CONTENT STYLES
+/*******************************************/
+.textBox{
+  background: url(../images/frame.png);
+  background-size: cover;
+  width: 25%;
+  margin: 50px;
+  display:inline;
+}
+
+.bolding{
+  font-weight: bold;
+}
+
+button{
+  background: blue;
+}
+
+#inlining{
+  display:inline;
+}
