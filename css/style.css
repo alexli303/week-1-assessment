@@ -52,13 +52,13 @@ a{
 /******************************************
 /* TEXT BOX MAIN CONTENT STYLES
 /*******************************************/
-.textBox{
+/*.textBox{
   background: url(../images/frame.png);
   background-size: cover;
   width: 25%;
   margin: 50px;
   display:inline;
-}
+}*/
 
 .bolding{
   font-weight: bold;
@@ -68,6 +68,37 @@ button{
   background: blue;
 }
 
-#inlining{
-  display:inline;
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] auto  [col2-start] auto  [col3-start] auto [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.textP {
+    grid-column: col2-start / col3-end;
+    grid-row: row2-start / row3-end ;
+}
+.phones {
+    grid-column: col1-start ;
+    grid-row: row1-start / row3-end;
+}
+.brand {
+    grid-column: col2-start / col3-end;
+    grid-row: row1-start ;
+}
+.logIn {
+    grid-column: col3-start ;
+    grid-row: row1-start ;
 }
