@@ -3,7 +3,6 @@ Project Name: Design Copy
 Client: Instagram
 Author: Alex Li
 Developer @GA in DENVER
-Extra points for uploading to gitHub:10 WOOOOOOOO
 */
 
 /******************************************
@@ -31,7 +30,6 @@ body {
   background: linear-gradient(to bottom, #517fa4, white);
   margin: 0px;
   width: 100%;
-  min-height: 100%;
 }
 
 
@@ -46,19 +44,19 @@ footer {
 }
 
 ul {
-     padding: 10px;
-     background: rgba(0,0,0,0.5);
+   padding: 10px;
+   background: white;
 }
 
 li {
    display: inline;
    padding: 0px 10px 0px 10px;
    font-size: 15px;
-   color: white;
+   color: #3b6f98;
 }
 
 a{
-  color: white;
+  color: #3b6f98;
 }
 
 /******************************************
@@ -120,22 +118,36 @@ button:hover {
 .brand {
     grid-column: col2-start;
     grid-row: row1-start ;
-    background: url(../images/brand.png);
     background-size: cover;
 }
 .logIn {
     grid-column: col3-start ;
     grid-row: row1-start;
-    justify-self: center;
+    /*justify-self: center;*/
+    margin-top: 15px;
 }
 .textP {
     grid-column: col2-start / col3-end;
     grid-row: row2-start / row3-end ;
     background: url(../images/frame.png);
     background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 75px;
+    font-size: 100%;
+    margin: 0 50px ;
+
 }
 /*END OF GRID LAYOUT*/
 
 h1{
   color: #002b56;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+/*CHANGING STYLE */
+@media (max-width: 600px) {
+  p {
+    color: red;
+  }
 }
